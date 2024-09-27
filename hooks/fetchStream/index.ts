@@ -99,7 +99,7 @@ async function* makeReaderIterator<R>(
  * @param {T} [request=fetchApi as T] 请求函数，默认为fetchApi
  * @returns {{ current: Ref<R | undefined>, fetchStream: (...args: Parameters<T>) => Promise<AsyncGenerator<{ current: R; str: string }>> }} 返回包含current和fetchStream的对象
  */
-export const useFetchstream = <
+export const useFetchStream = <
   R = any,
   T extends (...args: any[]) => any = typeof fetchApi
 >(
