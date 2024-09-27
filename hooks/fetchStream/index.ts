@@ -1,31 +1,5 @@
 import { Ref, ref, toValue } from 'vue'
-
-/**
- * Promise延迟执行函数
- * @param {number} [delay=200] - 延迟的毫秒数，默认为200毫秒
- * @returns {Promise<void>} - 返回一个在指定延迟后解析的Promise
- */
-export function sleep(delay = 200): Promise<void> {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve()
-    }, delay)
-  })
-}
-
-/**
- * 将字符串解析为JSON对象
- * @template T - JSON对象的类型
- * @param {string} str - 要解析的字符串
- * @returns {T | null} - 解析成功返回JSON对象，解析失败返回null
- */
-export function str2json<T = any>(str: string): T | null {
-  try {
-    return JSON.parse(str)
-  } catch (error) {
-    return null
-  }
-}
+import { sleep, str2json } from '@qmon/utils'
 
 /**
  * 发送POST请求到指定的URL

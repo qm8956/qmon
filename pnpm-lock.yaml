@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+optionalDependencies:
+  '@qmon/utils':
+    specifier: ^0.0.2
+    version: 0.0.2
+
 devDependencies:
   '@types/lodash-es':
     specifier: ^4.17.12
@@ -295,6 +300,12 @@ packages:
   /@jridgewell/sourcemap-codec@1.5.0:
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
     dev: true
+
+  /@qmon/utils@0.0.2:
+    resolution: {integrity: sha512-EVxsJLYPgDkkSjIrmBbSMTKUkP15kYKp+pg/Jsv7cPZeLwCvbEuhNeeDyHmwR45QDADCaC2PhVWiCTiUlcEEPQ==}
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /@rollup/rollup-android-arm-eabi@4.22.4:
     resolution: {integrity: sha512-Fxamp4aEZnfPOcGA8KSNEohV8hX7zVHOemC8jVBoBUHu5zpJK/Eu3uJwt6BMgy9fkvzxDaurgj96F/NiLukF2w==}
