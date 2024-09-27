@@ -69,12 +69,6 @@ const handleData = async <R>(str: string, current: Ref<R | undefined>): Promise<
   return true
 }
 
-/**
-
- * @param reader fetch.body 的读取器
- * @param current 接受到最新的内容
- */
-
 
 /**
  * 异步生成器函数，用于读取和处理数据流。
