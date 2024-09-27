@@ -3,10 +3,9 @@
 ## [Unreleased]
 
 ### Added
-- `appendQueryParams` 函数，用于将对象中的所有键值对添加到URL的查询参数中。
-- `getUrlParameters` 函数，用于解析 URL 中的查询参数。
-- `fRate` 函数，用于将面积单位转换为平方米。
-- `areaConversion` 函数，用于将面积单位转换为平方米。
+- 新增`useFetchStream`钩子，用于处理流式fetch请求，用户处理大模型流式处理
+- 新增`usePaged`钩子，用于处理分页请求
+- 新增`useAntdPagination`钩子，用于处理antd表格数据请求
 
 ### Changed
 - 初始版本发布。
